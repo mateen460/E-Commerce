@@ -1,0 +1,118 @@
+.list-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 740px;
+    padding: 10px 50px;
+    margin: 30px;
+    border-radius: 6px;
+    background: white;
+}
+.search-input {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 16px;
+}
+
+
+.search-input button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-input button:hover {
+    background-color: #0056b3;
+}
+.search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.listproduct-format-main{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 15px;
+    font-weight: 600;
+}
+.listproduct-format{
+    align-items: center;
+    font-weight: 500;
+}
+.listproduct-remove-icon{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+    margin: auto;
+}
+.listproduct-product-icon{
+    height: 80px;
+    width: 120px;
+    object-fit: contain;
+}
+.listproduct-allproducts{
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+h1{
+    margin-left: 200px;
+}
+@media (max-width:800px) {
+    .list-product{
+        box-sizing: border-box;
+        width: 95%;
+        height: 100%;
+        padding: 10px 30px;
+        margin: 20px auto;
+
+    }
+    .listproduct-format-main{
+        padding: 15px 0;
+        color: #454545;
+        font-size: 12px;
+
+    }
+    .listproduct-product-icon{
+        height: 60px;
+
+    }
+    .search-input{
+        width: auto;
+        padding: 30px;
+        margin: 10px;
+        display: block;
+    }
+    .search-input input {
+       width: 200px;
+    }
+    .search-input button{
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    h1{
+        margin-left: 200px;
+    }
+    
+}

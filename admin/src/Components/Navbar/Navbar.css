@@ -1,0 +1,48 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px #000;
+    margin-bottom: 1px;
+    background: white;
+}
+.nav-logo{
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+}
+.nav-profile{
+    width: 75px;
+    margin: right 20px; 
+}
+.login{
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+.right{
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+@media (max-width:800px) {
+    .navbar{
+        padding: 15px 30px;
+    }
+    .nav-logo{
+        width: 100px;
+    }
+    .nav-profile{
+        width: 60px;
+    }
+}
